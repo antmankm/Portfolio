@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Hero Section</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7c066b37d1.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-gray-800 text-white sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold hover:text-blue-400">
+                Abou Ndiaye Thiam
+            </a>
+            <ul class="hidden md:flex space-x-8 font-medium">
+                <li><a href="#home" class="hover:text-blue-400 transition">Accueil</a></li>
+                <li><a href="#about" class="hover:text-blue-400 transition">À propos</a></li>
+                <li><a href="#projects" class="hover:text-blue-400 transition">Projets</a></li>
+                <li><a href="#skills" class="hover:text-blue-400 transition">Compétences</a></li>
+                <li><a href="#contact" class="hover:text-blue-400 transition">Contact</a></li>
+            </ul>
+            <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 text-white">
+            <ul class="space-y-4 p-4">
+                <li><a href="#home" class="block hover:text-blue-400 transition">Accueil</a></li>
+                <li><a href="#about" class="block hover:text-blue-400 transition">À propos</a></li>
+                <li><a href="#projects" class="block hover:text-blue-400 transition">Projets</a></li>
+                <li><a href="#skills" class="block hover:text-blue-400 transition">Compétences</a></li>
+                <li><a href="#contact" class="block hover:text-blue-400 transition">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-white py-16">
+        <div class="container mx-auto px-4 flex flex-col-reverse lg:flex-row items-center gap-8">
+            <!-- Text Content -->
+            <div class="lg:w-1/2 text-center lg:text-left">
+                <h1 class="text-4xl font-bold text-gray-800 mb-4">Bienvenue sur mon Portfolio</h1>
+                <p class="text-lg text-gray-600 mb-6">
+                    Je suis Abou Ndiaye Thiam, un développeur web passionné par la création de solutions modernes, performantes et accessibles.
+                </p>
+                <!-- Download CV Button -->
+            <a href="image/ANTMAN.pdf" 
+            class="bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-600 transition" 
+            download="ANTMAN.pdf">
+             Télécharger mon CV
+           </a>
+            <!-- Social Media Section -->
+            <div class="flex justify-center lg:justify-start space-x-4 mt-4">
+                <a href="https://www.instagram.com" target="_blank" class="text-gray-600 hover:text-blue-500 text-2xl">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank" class="text-gray-600 hover:text-blue-500 text-2xl">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://x.com/ant_mvn2k" target="_blank" class="text-gray-600 hover:text-blue-500 text-2xl">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            </div>
+
+            <!-- Image Content -->
+            <div class="lg:w-1/2">
+                <img src="image/abou.jpg" alt="Hero Image" class="w-full rounded-lg shadow-lg">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+
+    <!-- About Section -->
+<section id="about" class="py-16 bg-gray-50">
+    <!-- Image Header -->
+    <div class="relative h-64">
+        <img src="image/aprpos.jpg" alt="À propos de moi" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+            <h2 class="text-4xl font-bold text-white">À propos de moi</h2>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="container mx-auto px-4 mt-12">
+        <div class="text-center text-gray-600 text-lg lg:w-2/3 mx-auto">
+            <p>
+                Je suis Abou Ndiaye Thiam, un développeur web passionné par l'apprentissage constant des nouvelles technologies et par la création de solutions numériques modernes. 
+                Mon objectif est de transformer des idées en applications performantes et accessibles.
+            </p>
+            <p class="mt-4">
+                Avec des compétences solides en <span class="font-bold text-gray-800">HTML</span>, 
+                <span class="font-bold text-gray-800">CSS</span>, <span class="font-bold text-gray-800">JavaScript</span>, 
+                et des outils comme <span class="font-bold text-gray-800">React</span> et <span class="font-bold text-gray-800">Node.js</span>, 
+                je m'engage à fournir des expériences utilisateur de haute qualité.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+    
+    <!-- Projects Section -->
+<section id="projects" class="py-16 bg-gray-50">
+    <!-- Image Header -->
+    <div class="relative h-64">
+        <img src="image/computer-.jpg" alt="Mes Projets" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+            <h2 class="text-4xl font-bold text-white">Mes Projets</h2>
+        </div>
+    </div>
+
+    <!-- Project Cards -->
+    <div class="container mx-auto px-4 mt-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Project 1 -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="image/Capture d’écran 2025-01-22 002206.jpg" alt="Projet 1" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-4">Projet 1 : Charity Hub</h3>
+                    <p class="text-gray-600 mb-6">Création d’un site  pour une organisation caritative fictive qui aide les communautés défavorisées.
+                        .</p>
+                    <a href=" https://charity-hub-five.vercel.app/" class="bg-blue-500 text-white px-5 py-1 rounded hover:bg-blue-600 transition ">
+                        Voir le projet
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="image/capture2.jpg" alt="Projet 2" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-4">Projet 2 : Portfolio Interactif</h3>
+                    <p class="text-gray-600 mb-6">Développement d'un portfolio interactif utilisant Tailwind CSS et animations JS.</p>
+                    <a href="https://antmankm.github.io/mon-site-web/" class="bg-blue-500 text-white px-5 py-1 rounded hover:bg-blue-600 transition">
+                        Voir le projet
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="image/coming soon.jpg" alt="Projet 3" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-4">Projet 3 : Application de Gestion</h3>
+                    <p class="text-gray-600 mb-6">Projet en cour.</p>
+                    <a href="#" class="bg-blue-500 text-white px-5 py-1 rounded hover:bg-blue-600 transition">
+                        Voir le projet
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Skills Section -->
+<section id="skills" class="py-16 bg-gray-50">
+    <!-- Image Header -->
+    <div class="relative h-64">
+        <img src="image/massage-.jpg" alt="Mes Compétences" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+            <h2 class="text-4xl font-bold text-white">Mes Compétences</h2>
+        </div>
+    </div>
+
+    <!-- Skills Content -->
+    <div class="container mx-auto px-4 mt-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Frontend Skills -->
+            <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+                <h3 class="text-xl font-semibold text-blue-500 mb-4">Frontend</h3>
+                <ul class="space-y-2 text-gray-600">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                </ul>
+            </div>
+
+            <!-- Backend Skills -->
+            <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+                <h3 class="text-xl font-semibold text-blue-500 mb-4">Backend</h3>
+                <ul class="space-y-2 text-gray-600">
+                    <li>Node.js</li>
+                    <li>Express</li>
+                    <li>MongoDB</li>
+                    <li>MySQL</li>
+                </ul>
+            </div>
+
+            <!-- Tools Skills -->
+            <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+                <h3 class="text-xl font-semibold text-blue-500 mb-4">Outils</h3>
+                <ul class="space-y-2 text-gray-600">
+                    <li>Git</li>
+                    <li>GitHub</li>
+                    <li>Figma</li>
+                    <li>Tailwind CSS</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Contact Section -->
+<section id="contact" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-8">
+        <!-- Image Content -->
+        <div class="lg:w-1/2">
+            <img src="image/6994531.jpg" alt="Contact" class="w-full rounded-lg shadow-lg">
+        </div>
+
+        <!-- Form Content -->
+        <div class="lg:w-1/2 bg-white p-8 rounded-lg shadow-lg">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Contactez-moi</h2>
+            <form action="#" method="post">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-600 mb-2">Nom</label>
+                    <input type="text" id="name" name="name" class="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-600 mb-2">Email</label>
+                    <input type="email" id="email" name="email" class="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-600 mb-2">Message</label>
+                    <textarea id="message" name="message" rows="5" class="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                </div>
+                <button type="submit" class="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition">Envoyer</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- About Section -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">À propos de moi</h3>
+                <p>
+                    Je suis Abou Ndiaye Thiam, un développeur web passionné par la création de solutions numériques modernes et performantes. N'hésitez pas à me contacter pour discuter de vos projets.
+                </p>
+            </div>
+
+            <!-- Contact Information -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                <ul class="space-y-2">
+                    <li>Email : <a href="mailto:abou.thiam@example.com" class="hover:text-blue-400">abouthiam842@gmail.com</a></li>
+                    <li>Téléphone : <a href="tel:+221123456789" class="hover:text-blue-400">+221 77 889 04 15</a></li>
+                    <li>Adresse : keur Massar, Dakar, Sénégal</li>
+                </ul>
+            </div>
+
+            <!-- Social Media Links -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Suivez-moi</h3>
+                <div class="flex space-x-4">
+                    <a href="#https://www.instagram.com" target="_blank" class="text-gray-400 hover:text-blue-500 text-2xl">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank" class="text-gray-400 hover:text-blue-500 text-2xl">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://x.com/ant_mvn2k" target="_blank" class="text-gray-400 hover:text-blue-500 text-2xl">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="border-t border-gray-700 mt-8 pt-4 text-center text-sm">
+            <p>&copy; 2025 Abou Ndiaye Thiam. Tous droits réservés.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- FontAwesome CDN -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
