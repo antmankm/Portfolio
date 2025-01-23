@@ -7,6 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/7c066b37d1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-gray-100">
 
@@ -16,6 +17,7 @@
             <a href="#home" class="text-2xl font-bold hover:text-blue-400">
                 Abou Ndiaye Thiam
             </a>
+        
             <ul class="hidden md:flex space-x-8 font-medium">
                 <li><a href="#home" class="hover:text-blue-400 transition">Accueil</a></li>
                 <li><a href="#about" class="hover:text-blue-400 transition">À propos</a></li>
@@ -41,37 +43,34 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="bg-white py-16">
+    <section id="home" class="bg-white py-8">
         <div class="container mx-auto px-4 flex flex-col-reverse lg:flex-row items-center gap-8">
-            <!-- Text Content -->
+            <!-- Texte -->
             <div class="lg:w-1/2 text-center lg:text-left">
-                <h1 class="text-4xl font-bold text-gray-800 mb-4">Bienvenue sur mon Portfolio</h1>
+                <h1 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">Salut! <br> Bienvenu <br> sur mon Portfolio</h1>
                 <p class="text-lg text-gray-600 mb-6">
                     Je suis Abou Ndiaye Thiam, un développeur web passionné par la création de solutions modernes, performantes et accessibles.
                 </p>
-                <!-- Download CV Button -->
-            <a href="image/ANTMAN.pdf" 
-            class="bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-600 transition" 
-            download="ANTMAN.pdf">
-             Télécharger mon CV
-           </a>
-            <!-- Social Media Section -->
-            <div class="flex justify-center lg:justify-start space-x-4 mt-4">
-                <a href="https://www.instagram.com" target="_blank" class="text-gray-600 hover:text-blue-500 text-2xl">
-                    <i class="fab fa-instagram"></i>
+                <a href="image/CV-MAJ.pdf" class="bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-600 transition" download="ANTMAN.pdf">
+                    Télécharger mon CV
                 </a>
-                <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank" class="text-gray-600 hover:text-blue-500 text-2xl">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://x.com/ant_mvn2k" target="_blank" class="text-gray-600 hover:text-blue-500 text-2xl">
-                    <i class="fab fa-twitter"></i>
-                </a>
+                <!-- Réseaux sociaux -->
+                <div class="flex justify-center lg:justify-start space-x-4 mt-4">
+                    <a href="https://www.instagram.com" target="_blank" class="text-gray-600 hover:text-blue-500 text-2xl">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank" class="text-gray-600 hover:text-blue-500 text-2xl">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://x.com/ant_mvn2k" target="_blank" class="text-gray-600 hover:text-blue-500 text-2xl">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
             </div>
-            </div>
-
-            <!-- Image Content -->
-            <div class="lg:w-1/2">
-                <img src="image/abou.jpg" alt="Hero Image" class="w-full rounded-lg shadow-lg">
+    
+            <!-- Image -->
+            <div class="lg:w-1/2 flex justify-center lg:justify-end">
+                <img src="image/abou.jpg" alt="Hero Image" class="w50 h-50 lg:w-48 lg:h-50 rounded-full shadow-lg object-cover">
             </div>
         </div>
     </section>
@@ -291,6 +290,7 @@
         </div>
     </div>
 </footer>
+<script src="script.js"></script>
 
 <!-- FontAwesome CDN -->
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
